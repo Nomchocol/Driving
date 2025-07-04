@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -17,4 +18,15 @@ public class CameraController : MonoBehaviour
     {
         transform.position = player.transform.position + offset;
     }
+
+    public void Scene()
+    {
+        SceneManager.LoadScene("Prototype 1");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
